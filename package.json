@@ -12,9 +12,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@octokit/rest": "^20.0.0",
-    "axios": "^1.5.1",
-    "wakatime-client": "^2.7.0"
+    "@octokit/rest": "^20.0.0"
   },
   "devDependencies": {
     "husky": "^8.0.0",
