@@ -1,8 +1,13 @@
-name: "waka-box"
+name: "wakatime-box"
 description: "Update a pinned gist to contain WakaTime stats"
 branding:
-  icon: "clipboard"
-  color: "blue"
+  icon: "activity"
+  color: "gray-dark"
 runs:
-  using: "node16"
-  main: "dist/index.js"
+  using: "composite"
+  steps:
+    - uses: oven-sh/setup-bun@v1
+      with:
+        bun-version: 1.0.4
+    - run: bun run index.js
+      shell: bash

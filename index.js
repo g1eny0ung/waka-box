@@ -1,11 +1,10 @@
-require("dotenv").config();
 const { WakaTimeClient, RANGE } = require("wakatime-client");
 const { Octokit } = require("@octokit/rest");
 
 const {
   GIST_ID: gistId,
   GH_TOKEN: githubToken,
-  WAKATIME_API_KEY: wakatimeApiKey
+  WAKATIME_API_KEY: wakatimeApiKey,
 } = process.env;
 
 const wakatime = new WakaTimeClient(wakatimeApiKey);
@@ -39,7 +38,7 @@ async function updateGist(stats) {
       trimRightStr(name, 10).padEnd(10),
       time.padEnd(14),
       generateBarChart(percent, 21),
-      String(percent.toFixed(1)).padStart(5) + "%"
+      String(percent.toFixed(1)).padStart(5) + "%",
     ];
 
     lines.push(line.join(" "));
@@ -55,9 +54,9 @@ async function updateGist(stats) {
       files: {
         [filename]: {
           filename: `📊 Weekly development breakdown`,
-          content: lines.join("\n")
-        }
-      }
+          content: lines.join("\n"),
+        },
+      },
     });
   } catch (error) {
     console.error(`Unable to update gist\n${error}`);
