@@ -10,7 +10,5 @@ runs:
     - uses: oven-sh/setup-bun@v1
       with:
         bun-version: 1.0.4
-    - run: bun install
-      shell: bash
-    - run: bun run index.js
+    - run: bun run dist/index.js
       shell: bash

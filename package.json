@@ -8,6 +8,7 @@
   ],
   "license": "ISC",
   "scripts": {
+    "build": "bun build ./index.js --outdir dist --minify",
     "prepare": "husky install"
   },
   "dependencies": {
