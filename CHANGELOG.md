@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [6.1.0] - 2023-10-08
+
+### Changed
+
+- Remove `wakatime-client` dependency, call wakatime API manually.
+- Pre-build main file for next usage.
+- Refurbish README.
+
 ## [6.0.0] - 2023-10-07
 
 ### Changed

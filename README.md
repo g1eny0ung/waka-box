@@ -27,19 +27,21 @@
 
 #### Use fork
 
+> You will use the master branch of this repo, which is the latest version of this action.
+
 1. Fork this repo.
 1. Go to the repo **Settings > Secrets and variables > Actions**.
 1. Add the following secrets:
 
-   - GIST_ID
+   - `GIST_ID`
 
      The ID portion from your gist url: `https://gist.github.com/g1eny0ung/`**`a69405549d813107fd0bba15815cbaa6`**.
 
-   - GH_TOKEN
+   - `GH_TOKEN`
 
      The GitHub token generated above.
 
-   - WAKATIME_API_KEY
+   - `WAKATIME_API_KEY`
 
      The API key for your WakaTime account.
 
