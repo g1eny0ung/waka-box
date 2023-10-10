@@ -63,9 +63,10 @@ async function updateGist(stats) {
     const filename = Object.keys(gist.data.files)[0]
     await octokit.gists.update({
       gist_id: gistId,
+      description: gistName,
       files: {
         [filename]: {
-          filename: gistName,
+          filename: `📊 Weekly development breakdown`,
           content: lines.join('\n'),
         },
       },
