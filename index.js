@@ -2,6 +2,7 @@ const { Octokit } = require('@octokit/rest')
 
 const {
   GIST_ID: gistId,
+  GIST_NAME: gistName,
   GH_TOKEN: githubToken,
   WAKATIME_API_KEY: wakatimeApiKey,
   WAKATIME_BASE_URL: _wakatimeBaseUrl,
@@ -62,6 +63,7 @@ async function updateGist(stats) {
     const filename = Object.keys(gist.data.files)[0]
     await octokit.gists.update({
       gist_id: gistId,
+      description: gistName,
       files: {
         [filename]: {
           filename: `📊 Weekly development breakdown`,

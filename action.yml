@@ -1,10 +1,15 @@
-name: "waka-box-fast"
-description: "Update a pinned gist to contain WakaTime stats"
+name: 'waka-box-fast'
+description: 'Update a pinned gist to contain WakaTime stats'
 branding:
-  icon: "activity"
-  color: "gray-dark"
+  icon: 'activity'
+  color: 'gray-dark'
+inputs:
+  gist-name:
+    description: 'Name of the gist to update'
+    required: false
+    default: '📊 Weekly development breakdown'
 runs:
-  using: "composite"
+  using: 'composite'
   steps:
     - uses: actions/checkout@v4
     - uses: oven-sh/setup-bun@v1
@@ -12,3 +17,5 @@ runs:
         bun-version: 1.0.4
     - run: bun dist/index.js
       shell: bash
+      env:
+        GIST_NAME: ${{ inputs.gist-name }}
