@@ -14,3 +14,4 @@ jobs:
           GIST_ID: ${{ secrets.GIST_ID }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          # WAKATIME_BASE_URL: ${{ secrets.WAKATIME_BASE_URL }}

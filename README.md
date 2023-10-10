@@ -45,7 +45,7 @@
 
      The API key for your WakaTime account.
 
-   - `WAKATIME_BASE_URL`
+   - `WAKATIME_BASE_URL` (Optional)
 
      Use `https://wakatime.com/api/v1` by default. If you are using a WakaTime-compatible backend (e.g. Wakapi), change this to the corresponding base URL.
 
@@ -72,6 +72,7 @@
              GIST_ID: ${{ secrets.GIST_ID }}
              GH_TOKEN: ${{ secrets.GH_TOKEN }}
              WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+             # WAKATIME_BASE_URL: ${{ secrets.WAKATIME_BASE_URL }}
    ```
 
 ## Credits
