@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Support `WAKATIME_BASE_URL` to use self-hosted wakatime server.
+
 ## [6.1.0] - 2023-10-08
 
 ### Changed

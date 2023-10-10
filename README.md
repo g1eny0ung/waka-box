@@ -45,6 +45,10 @@
 
      The API key for your WakaTime account.
 
+   - `WAKATIME_BASE_URL`
+
+     Use `https://wakatime.com/api/v1` by default. If you are using a WakaTime-compatible backend (e.g. Wakapi), change this to the corresponding base URL.
+
 #### Manually create workflow
 
 1. Create a new file in your repo `.github/workflows/waka-box-fast.yml`.
@@ -55,7 +59,7 @@
    on:
      # You can change the cron schedule here based on your needs. This will run daily at midnight.
      schedule:
-       - cron: "0 0 * * *"
+       - cron: '0 0 * * *'
      # Manual triggers with workflow_dispatch
      workflow_dispatch:
    jobs:
