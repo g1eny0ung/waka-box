@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [6.2.0] - 2023-10-10
+
+### Added
+
 - Support `WAKATIME_BASE_URL` to use self-hosted wakatime server.
 - Support naming the gist with `gist-name` input.
 

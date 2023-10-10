@@ -10,8 +10,8 @@ jobs:
     steps:
       - name: Update gist
         uses: g1eny0ung/waka-box@master
-        with:
-          gist-name: Weekly Wakatime Stats
+        # with:
+        #   gist-name: Weekly Wakatime Stats
         env:
           GIST_ID: ${{ secrets.GIST_ID }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
