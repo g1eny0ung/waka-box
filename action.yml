@@ -1,8 +1,8 @@
 name: 'waka-box-fast'
 description: 'Update a pinned gist to contain WakaTime stats'
 branding:
-  icon: 'activity'
-  color: 'gray-dark'
+  icon: 'align-left'
+  color: 'blue'
 inputs:
   gist-name:
     description: 'Name of the gist to update'
