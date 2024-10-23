@@ -6,6 +6,7 @@
 
 ---
 
+> [!IMPORTANT]
 > This action is a fork of <https://github.com/matchai/waka-box>, using bun in place of nodejs.
 >
 > Named `waka-box-fast` because it's easier to use than the original `waka-box` action.
