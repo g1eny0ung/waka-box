@@ -1,6 +1,6 @@
 {
   "name": "waka-box",
-  "version": "6.2.1",
+  "version": "6.3.1",
   "description": "📊 Update a gist to contain your weekly WakaTime stats",
   "author": "Matan Kushner <hello@matchai.me>",
   "contributors": [
